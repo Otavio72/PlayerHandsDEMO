@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Player com Gestos - MediaPipe Hands</title>
+
+          <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+      
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/css/styles.css" rel="stylesheet" />
+</head>
+
+<body style="overflow-y: hidden;">
+
+        <nav class="navbar navbar-expand-lg fixed-top py-1" id="mainNav2">
+            <div class="ps-0">
+                <a class="navbar-brand" href="/"><img src="/assets\PlayerHandsLogo.png" alt="" width="30%" height="auto"></a>
+
+            </div>
+        </nav>
+
+          <header class="masthead" id="wallpaper2">
+                  
+                    <div class="video-wrapper">
+                        
+                        <video id="input_video" style="display:none;"></video>
+<div class="gestos">              
+  <ul>
+    <li class="title">Gestos</li>
+    <li><img class="emojiGif" src="\assets\img\gifs\1.gif" alt="">PLAY</li>
+    <li><img class="emojiGif" src="\assets\img\gifs\2.gif" alt="">PAUSE</li>
+    <li><img class="emojiGif" style="transform: rotate(-90deg);" src="\assets\img\gifs\3.gif" alt="">AVANÇAR</li>
+    <li><img class="emojiGif" style="transform: rotate(90deg) scaleX(-1);" src="\assets\img\gifs\3.gif" alt="">VOLTAR</li>
+    <li><img class="emojiGif" style="transform: rotate(90deg)" src="\assets\img\gifs\4.gif" alt="">VOLUME (aproximar: diminuir // afastar: aumentar)</li>
+  </ul>   
+</div>
+
+                        <video id="meuVideo" controls>
+                          <source id="videoSource" src="" type="video/mp4">
+                          Seu navegador não suporta o elemento de vídeo.
+                        </video>
+
+                          <canvas id="output_canvas"></canvas>
+                          <div id="gestoSelecionado">Nenhum selecionado</div>
+
+                          
+                    </div>
+                    
+          
+            
+        </header>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script src="/js/mostrarGesto.js"></script>
+  <script src="/js/mediaPipe.js"></script>
+
+          <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+</body>
+</html>
