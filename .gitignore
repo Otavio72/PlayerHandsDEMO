@@ -21,8 +21,3 @@ build/
 .DS_Store
 Thumbs.db
 
-# Ignorar tudo dentro de videos
-videos/*
-
-# Mas manter o placeholder
-!videos/.gitkeep
